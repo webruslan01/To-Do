@@ -1,0 +1,51 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: Roboto, sans-serif;
+	box-sizing: border-box;
+}
+
+.todo{
+	width: 400px;
+	margin: 0 auto;
+}
+
+h1{
+	text-align: center;
+	text-transform: uppercase;
+	color: rgb(64, 179, 19);
+	padding: 20px 0;
+}
+
+.todo .todo__add{
+	width: 100%;
+	padding: 10px;
+	font-size: 20px;
+	border: 1px solid rgb(64, 179, 19);
+	border-radius: 5px;
+	color: #000;
+	outline: none;
+}
+
+.todo .todo__add::placeholder{
+	color: #000;
+}
+
+.todo .todo__task{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	padding: 10px 10px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.todo .todo__delete{
+	display: none;
+	font-size: 20px;
+	color: red;
+}
+
+.todo .todo__task:hover .todo__delete{
+	display: block;
+}
